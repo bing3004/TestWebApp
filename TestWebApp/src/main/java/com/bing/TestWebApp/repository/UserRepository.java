@@ -1,2 +1,10 @@
-package com.bing.TestWebApp.repository;public interface UserRepository {
+package com.bing.TestWebApp.repository;
+
+import com.bing.TestWebApp.model.User;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface UserRepository extends JpaRepository<User, String> {
+
 }
